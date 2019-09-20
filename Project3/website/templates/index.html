@@ -6,7 +6,7 @@
 
 {% for article in object_list %}
 <div class="article">
-	<h3><a href="">{{ article.title }}</a></h3>
+	<h3><a href="{% url 'article_page' article.pk %}">{{ article.title }}</a></h3>
 	<p>{{ article.text }}</p>
 </div>
 {% endfor %}
